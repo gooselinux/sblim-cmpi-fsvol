@@ -1,0 +1,14 @@
+diff -up sblim-cmpi-fsvol-1.5.0/OSBase_BlockStorageStatisticalData.c.old sblim-cmpi-fsvol-1.5.0/OSBase_BlockStorageStatisticalData.c
+--- sblim-cmpi-fsvol-1.5.0/OSBase_BlockStorageStatisticalData.c.old	2009-06-02 21:42:24.000000000 +0200
++++ sblim-cmpi-fsvol-1.5.0/OSBase_BlockStorageStatisticalData.c	2010-07-26 08:42:33.000000000 +0200
+@@ -30,8 +30,8 @@
+ 
+ #define CHECK_FCT_PARAM
+ 
+-#define HD_CMD "grep \"[hs]d[a-z] \" /proc/partitions"
+-#define HD_CMD_26 "grep \"[hs]d[a-z] \" /proc/diskstats"
++#define HD_CMD "grep \"[hsv]d[a-z] \" /proc/partitions"
++#define HD_CMD_26 "grep \"[hsv]d[a-z] \" /proc/diskstats"
+ 
+ #define STATS_FILE "/proc/partitions"
+ #define STATS_FILE_26 "/proc/diskstats"
